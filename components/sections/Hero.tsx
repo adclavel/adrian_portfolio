@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="max-w-6xl w-full mx-auto px-6 flex flex-col-reverse md:flex-row items-center relative">
         {/* Left: Text Content - z-10 ensures text stays above the background */}
         <div className="flex-1 text-center md:text-left md:pr-16 z-10 py-12">
-          <h4 className="mb-2 font-medium">
+          <h4 className="mb-2 font-medium -ml-4 md:-ml-8">
             Junior Software Quality Assurance Engineer
           </h4>
 
@@ -32,7 +32,7 @@ export default function Hero() {
           {/* Social Icons */}
           <div className="flex justify-center md:justify-start gap-6 mt-6">
             <a
-              href="mailto:your-email@example.com"
+              href="mailto:adrianpaulodonesclavel@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -43,7 +43,7 @@ export default function Hero() {
               />
             </a>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/adclavel"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -54,7 +54,7 @@ export default function Hero() {
               />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/adrianclavel/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -67,20 +67,49 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right: Background Image - Fixed the "Cut-off" */}
+        {/* Container */}
         <div className="flex-1 w-full h-[300px] md:h-[600px] relative">
+          {/* 1. Spinning Background Blob */}
           <img
             src="/background.png"
             alt="Background Gradient"
-            // scale-125 and -left-10 allow the image to bleed past its container
-            // mask-image creates a soft fade on the left so there is no "line"
-            className="absolute inset-0 w-full h-full object-cover object-center scale-110 md:scale-125 md:-right-20"
-            style={{
-              maskImage: "linear-gradient(to right, transparent, black 20%)",
-              WebkitMaskImage:
-                "linear-gradient(to right, transparent, black 20%)",
-            }}
+            className="
+      absolute 
+      top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+      w-full md:w-[130%] 
+      max-w-none 
+      h-auto 
+      object-contain 
+      z-0
+      pointer-events-none
+      animate-[spin_20s_linear_infinite]
+    "
           />
+
+          {/* 2. Adrian Image - Positioned Slightly Lower */}
+          <img
+            src="/adrian.png"
+            alt="Adrian"
+            className="
+    absolute 
+    /* Changed from top-1/2 (50%) to 55% to lower it slightly */
+    top-[55%] 
+    left-1/2 
+    -translate-x-1/2 
+    -translate-y-1/2
+    
+    !w-[300px] md:!w-[600px] 
+    !max-w-none 
+    h-auto 
+    object-contain
+    
+    z-10 
+    pointer-events-none
+  "
+          />
+
+          {/* 3. Content Layer */}
+          <div className="relative z-20">{/* Your Content Here */}</div>
         </div>
       </div>
     </section>

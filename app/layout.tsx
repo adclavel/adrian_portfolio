@@ -2,7 +2,7 @@ import "./globals.css";
 import Navbar from "@/components/sections/Navbar";
 
 export const metadata = {
-  title: "Adrian | QA & DevOps Portfolio",
+  title: "Adrian Clavel",
   description: "QA, Automation, and DevOps-focused portfolio",
 };
 

@@ -5,7 +5,7 @@ export default function Hero() {
         {/* Left: Text Content - z-10 ensures text stays above the background */}
         <div className="flex-1 text-center md:text-left md:pr-16 z-10 py-12">
           <h4 className="mb-2 font-medium -ml-4 md:-ml-8">
-            Junior Software Quality Assurance Engineer
+            Software Quality Assurance Engineer
           </h4>
 
           <h1 className="text-6xl md:text-7xl font-bold mb-4 drop-shadow-md">

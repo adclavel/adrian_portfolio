@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center bg-[#F0E8D5] text-[#212842] overflow-hidden relative">
-      <div className="max-w-6xl w-full mx-auto px-1 flex flex-col-reverse md:flex-row items-center relative">
+      <div className="max-w-6xl w-full mx-auto px- flex flex-col-reverse md:flex-row items-center relative">
         {/* Left: Text Content - z-10 ensures text stays above the background */}
         <div className="flex-1 text-center md:text-left md:pr-16 z-10 py-12">
           <h4 className="mb-2 font-medium -ml-4 md:-ml-8">

@@ -1,8 +1,6 @@
 import "./globals.css";
 import Navbar from "@/components/sections/Navbar";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import { inter } from "@/components/lib/fonts";
 
 export const metadata = {
   title: "Adrian Clavel",

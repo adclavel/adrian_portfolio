@@ -1,4 +1,36 @@
+"use client";
+
+import { abel } from "@/components/lib/fonts";
+import { useRef, useEffect } from "react";
+
 export default function About() {
+  const soundPool = useRef<HTMLAudioElement[]>([]);
+
+  // Create the Audio objects only after the component mounts
+  useEffect(() => {
+    const sounds = [
+      "/sounds/f1-1.mp3",
+      "/sounds/f1-2.mp3",
+      "/sounds/f1-3.mp3",
+      "/sounds/f1-4.mp3",
+      "/sounds/f1-5.mp3",
+    ].map((src) => {
+      const audio = new Audio(src);
+      audio.volume = 0.4;
+      return audio;
+    });
+
+    soundPool.current = sounds;
+  }, []);
+
+  const playRandomSound = () => {
+    if (soundPool.current.length === 0) return; // prevent error if not ready
+    const audio =
+      soundPool.current[Math.floor(Math.random() * soundPool.current.length)];
+    audio.currentTime = 0;
+    audio.play();
+  };
+
   return (
     <section className="min-h-screen bg-[#F0E8D5] text-[#212842] relative">
       <div className="max-w-[1400px] mx-auto px-8 py-20 flex flex-col md:flex-row gap-16 w-full">
@@ -18,7 +50,12 @@ export default function About() {
         {/* Right: Content */}
         <div className="flex-1 text-center md:text-left z-10">
           {/* ABOUT */}
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">About Me</h2>
+          <h2
+            id="about"
+            className={`scroll-mt-32 text-5xl md:text-6xl lg:text-7xl font-bold mb-6 ${abel.className}`}
+          >
+            About Me...
+          </h2>
 
           <p className="text-lg leading-relaxed font-thin mb-5">
             Hi, I’m <span className="font-thin">Adrian</span>, passionate about
@@ -29,7 +66,21 @@ export default function About() {
 
           <p className="text-lg leading-relaxed font-thin mb-5">
             I’m currently working at{" "}
-            <span className="font-thin">LawAdvisor</span> as a{" "}
+            <a
+              href="https://lawadvisor.ventures/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative font-semibold text-current transition-colors duration-300
+             hover:text-[#37398B]
+             after:absolute after:left-0 after:-bottom-1
+             after:h-[2px] after:w-0
+             after:bg-[#37398B]
+             after:transition-all after:duration-300
+             hover:after:w-full"
+            >
+              LawAdvisor
+            </a>{" "}
+            as a{" "}
             <span className="font-thin">Junior Quality Assurance Engineer</span>
             , where I focus on feature testing, identifying edge cases, and
             collaborating closely with developers to maintain high software
@@ -38,12 +89,32 @@ export default function About() {
 
           <p className="text-lg leading-relaxed font-thin mb-10">
             Outside of work, I enjoy exploring new technology trends, keeping up
-            with Formula 1 highlights, and exchanging ideas about automation,
-            CI/CD, and cloud tools.
+            with{" "}
+            <span
+              onClick={playRandomSound}
+              style={{ cursor: "url('/f1-cursor-v1.png') 32 0, pointer" }}
+              className="relative font-semibold transition-colors duration-300
+                hover:text-[#37398B]
+                after:absolute after:left-0 after:-bottom-1
+                after:h-[1.5px] after:w-0
+                after:bg-[#37398B]
+                after:transition-all after:duration-300
+                hover:after:w-full"
+            >
+              Formula 1
+            </span>{" "}
+            highlights, and exchanging ideas about automation, CI/CD, and cloud
+            tools.
           </p>
 
           {/* EXPERIENCE */}
-          <h3 className="text-3xl font-semibold mb-8">Experience</h3>
+          <h2
+            id="experience"
+            className={`scroll-mt-32 text-5xl md:text-6xl lg:text-7xl font-bold mb-6 ${abel.className}`}
+          >
+            Experience
+          </h2>
+
           {/* EXPERIENCE ITEM */}
           <div className="mb-10">
             <a
@@ -141,7 +212,13 @@ export default function About() {
           </div>
 
           {/* PROJECTS */}
-          <h3 className="text-3xl font-semibold mb-8">Projects</h3>
+          <h2
+            id="projects"
+            className={`scroll-mt-32 text-5xl md:text-6xl lg:text-7xl font-bold mb-6 ${abel.className}`}
+          >
+            Projects
+          </h2>
+
           {/* Project 1 */}
           <div className="mb-8">
             <a
@@ -157,7 +234,10 @@ export default function About() {
                 <img
                   src="/xposeAI.png"
                   alt="XposeAI"
-                  className="w-[140px] h-[80px] object-cover rounded-md"
+                  className="w-[140px] h-[80px] object-cover rounded-md
+               border-2 border-gray-400/40
+               transition-colors duration-300
+               group-hover:border-gray-300/80"
                 />
               </div>
 
@@ -210,7 +290,10 @@ export default function About() {
                 <img
                   src="/eagles.png"
                   alt="Eagle’s Leisurewear"
-                  className="w-[140px] h-[80px] object-cover rounded-md"
+                  className="w-[140px] h-[80px] object-cover rounded-md
+               border-2 border-gray-400/40
+               transition-colors duration-300
+               group-hover:border-gray-300/80"
                 />
               </div>
 

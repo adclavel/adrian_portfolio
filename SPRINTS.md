@@ -29,9 +29,9 @@ Done:
 Sprint 4 - January 25 - 31, 2026
 Goals: Finalize Website
 
-To do:
+Done:
 
-- Change gmail icon to instagram
+- Fix Gmail Button
 - Download Resume Function
 - Complete badges in experience section
 - Hero Landing Motions

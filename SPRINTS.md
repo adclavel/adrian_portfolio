@@ -42,8 +42,6 @@ Sprint 5 - February 1 to February 7
 
 To do:
 
-- Make layout adapt to different screen sizes
-- Create a mobile view version of the site
 - QA
 
 Done:
@@ -51,5 +49,17 @@ Done:
 - Navbar Fix Issue:
 - Change About Me Paragraph
 - Fix Navbar hover state on scroll (highlight correct section when scrolled)
+- Make layout adapt to different screen sizes - REMOVED
+- Create a mobile view version of the site
+
+---
+
+Sprint 6 - February 8 to February 14,
+
+To do:
+
+- QA
+- Deploy Portfolio by Wednesday
+- Announce on Friday
 
 ---

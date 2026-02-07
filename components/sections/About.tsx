@@ -55,6 +55,7 @@ export default function About() {
         {/* Right: Content */}
         <div className="flex-1 text-center md:text-left z-10">
           {/* ABOUT */}
+          {/* ABOUT */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -63,31 +64,30 @@ export default function About() {
           >
             <h2
               id="about"
-              className={`scroll-mt-24 text-5xl md:text-6xl lg:text-7xl font-bold mb-6 ${abel.className}`}
+              className={`scroll-mt-24 text-5xl md:text-6xl lg:text-7xl font-bold mb-6 ${abel.className} text-left`}
             >
               About Me...
             </h2>
 
-            <p className="text-lg leading-relaxed font-thin mb-5">
-              Hi, I’m <span className="font-thin">Adrian</span>, passionate
-              about quality assurance and exploring the world of DevOps. I enjoy
-              ensuring that every feature works exactly as intended and helping
-              teams deliver reliable, user-friendly products.
+            <p className="text-lg leading-relaxed font-thin mb-5 text-left">
+              Hi, I’m Adrian, passionate about quality assurance and improving
+              software reliability. I enjoy testing features, identifying
+              issues, and helping create smooth user experiences.
             </p>
 
-            <p className="text-lg leading-relaxed font-thin mb-5">
+            <p className="text-lg leading-relaxed font-thin mb-5 text-left">
               I’m currently working at{" "}
               <a
                 href="https://lawadvisor.ventures/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative font-semibold text-current transition-colors duration-300
-         hover:text-[#37398B]
-         after:absolute after:left-0 after:-bottom-1
-         after:h-[2px] after:w-0
-         after:bg-[#37398B]
-         after:transition-all after:duration-300
-         hover:after:w-full"
+                hover:text-[#37398B]
+                after:absolute after:left-0 after:-bottom-1
+                after:h-[2px] after:w-0
+                after:bg-[#37398B]
+                after:transition-all after:duration-300
+                hover:after:w-full"
               >
                 LawAdvisor
               </a>{" "}
@@ -100,31 +100,30 @@ export default function About() {
               quality.
             </p>
 
-            <p className="text-lg leading-relaxed font-thin mb-10">
-              Outside of work, I enjoy exploring new technology trends, keeping
-              up with{" "}
+            <p className="text-lg leading-relaxed font-thin mb-10 text-left">
+              Outside of work, I enjoy building things through coding, exploring
+              new technology trends, and keeping up with{" "}
               <span
                 onClick={playRandomSound}
                 style={{ cursor: "url('/f1-cursor-v1.png') 32 0, pointer" }}
                 className="relative font-semibold transition-colors duration-300
-        hover:text-[#37398B]
-        after:absolute after:left-0 after:-bottom-1
-        after:h-[1.5px] after:w-0
-        after:bg-[#37398B]
-        after:transition-all after:duration-300
-        hover:after:w-full"
+                        hover:text-[#37398B]
+                        after:absolute after:left-0 after:-bottom-1
+                        after:h-[1.5px] after:w-0
+                        after:bg-[#37398B]
+                        after:transition-all after:duration-300
+                        hover:after:w-full"
               >
                 Formula 1
               </span>{" "}
-              highlights, and exchanging ideas about automation, CI/CD, and
-              cloud tools.
+              every race weekend. I also enjoy exchanging ideas about automation
             </p>
           </motion.div>
 
           {/* EXPERIENCE */}
           <motion.h2
             id="experience"
-            className={`scroll-mt-32 text-5xl md:text-6xl lg:text-7xl font-bold mb-6 ${abel.className}`}
+            className={`scroll-mt-32 text-5xl md:text-6xl lg:text-7xl font-bold mb-6 ${abel.className} text-left`}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
@@ -133,7 +132,7 @@ export default function About() {
             Experience
           </motion.h2>
 
-          {/* EXPERIENCE ITEM */}
+          {/* EXPERIENCE ITEM 1 */}
           <motion.div
             className="mb-10"
             initial={{ opacity: 0, y: 40 }}
@@ -145,19 +144,19 @@ export default function About() {
               href="https://lawadvisor.ventures/"
               target="_blank"
               rel="noopener noreferrer"
-              className="grid grid-cols-[180px_1fr] gap-6 
+              className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 md:gap-6 
        p-4 rounded-[10px] transition-colors duration-300 
        bg-transparent hover:bg-[#276DA4]/[0.07] group"
             >
               {/* DATE */}
-              <div className="flex justify-center">
-                <span className="text-sm opacity-70 whitespace-nowrap pt-1">
+              <div className="flex justify-start mb-2 md:mb-0">
+                <span className="text-sm opacity-70 whitespace-nowrap pt-1 text-left">
                   August 2025 – Present
                 </span>
               </div>
 
               {/* CONTENT */}
-              <div>
+              <div className="text-left">
                 <h4 className="text-xl font-semibold transition-colors duration-300 group-hover:text-[#37398B]">
                   Junior Software Quality Assurance Engineer
                 </h4>
@@ -197,7 +196,7 @@ export default function About() {
             </a>
           </motion.div>
 
-          {/* Second EXPERIENCE ITEM */}
+          {/* EXPERIENCE ITEM 2 */}
           <motion.div
             className="mb-12"
             initial={{ opacity: 0, y: 40 }}
@@ -209,19 +208,19 @@ export default function About() {
               href="https://lawadvisor.ventures/"
               target="_blank"
               rel="noopener noreferrer"
-              className="grid grid-cols-[180px_1fr] gap-6 
+              className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 md:gap-6 
        p-4 rounded-[10px] transition-colors duration-300 
        bg-transparent hover:bg-[#276DA4]/[0.07] group"
             >
               {/* DATE */}
-              <div className="flex justify-center">
-                <span className="text-sm opacity-70 whitespace-nowrap pt-1">
+              <div className="flex justify-start mb-2 md:mb-0">
+                <span className="text-sm opacity-70 whitespace-nowrap pt-1 text-left">
                   April – July 2025
                 </span>
               </div>
 
               {/* CONTENT */}
-              <div>
+              <div className="text-left">
                 <h4 className="text-xl font-semibold transition-colors duration-300 group-hover:text-[#37398B]">
                   Software Quality Assurance Intern
                 </h4>
@@ -256,7 +255,7 @@ export default function About() {
           {/* PROJECTS */}
           <motion.h2
             id="projects"
-            className={`scroll-mt-32 text-5xl md:text-6xl lg:text-7xl font-bold mb-6 ${abel.className}`}
+            className={`scroll-mt-32 text-5xl md:text-6xl lg:text-7xl font-bold mb-6 ${abel.className} text-left`}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
@@ -277,29 +276,24 @@ export default function About() {
               href="https://www.youtube.com/watch?v=psHWHZ-DZZw"
               target="_blank"
               rel="noopener noreferrer"
-              className="grid grid-cols-[180px_1fr] gap-6 
-       p-4 rounded-[10px] transition-colors duration-300 
-       bg-transparent hover:bg-[#276DA4]/[0.07] group"
+              className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 md:gap-6 p-4 rounded-[10px] transition-colors duration-300 bg-transparent hover:bg-[#276DA4]/[0.07] group"
             >
-              {/* IMAGE */}
-              <div className="flex justify-center items-start">
+              {/* IMAGE - MOBILE BOTTOM */}
+              <div className="order-2 md:order-1 flex justify-start mt-4 md:mt-0">
                 <img
                   src="/xposeAI.png"
                   alt="XposeAI"
-                  className="w-[140px] h-[80px] object-cover rounded-md
-         border-2 border-gray-400/40
-         transition-colors duration-300
-         group-hover:border-gray-300/80"
+                  className="w-full md:w-[140px] h-auto md:h-[80px] object-cover rounded-md border-2 border-gray-400/40 transition-colors duration-300 group-hover:border-gray-300/80"
                 />
               </div>
 
               {/* CONTENT */}
-              <div>
-                <h4 className="text-xl font-semibold transition-colors duration-300 group-hover:text-[#37398B]">
+              <div className="order-1 md:order-2 text-left md:text-left">
+                <h4 className="text-xl font-semibold transition-colors duration-300 group-hover:text-[#37398B] text-left">
                   XposeAI
                 </h4>
-                <p className="opacity-80 mb-2">Thesis Project</p>
-                <p className="leading-relaxed max-w-3xl">
+                <p className="opacity-80 mb-2 text-left">Thesis Project</p>
+                <p className="leading-relaxed max-w-3xl text-left">
                   XposeAI is an AI-powered image tampering detection system that
                   identifies whether an image is real or manipulated using Error
                   Level Analysis (ELA) and a Convolutional Neural Network (CNN).
@@ -309,7 +303,7 @@ export default function About() {
                 </p>
 
                 {/* TOOL BADGES */}
-                <div className="flex flex-wrap gap-3 mt-4">
+                <div className="flex flex-wrap gap-3 mt-4 justify-start">
                   <span className="h-5 px-3 flex items-center justify-center rounded-[20px] bg-[#37398B] text-[#F0E8D5] text-xs">
                     Python
                   </span>
@@ -339,29 +333,24 @@ export default function About() {
               href="https://drive.google.com/drive/folders/1iWzwbDTGrlDsRDWm5Ys65dRDZkLTUX_R"
               target="_blank"
               rel="noopener noreferrer"
-              className="grid grid-cols-[180px_1fr] gap-6 
-       p-4 rounded-[10px] transition-colors duration-300 
-       bg-transparent hover:bg-[#276DA4]/[0.07] group"
+              className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 md:gap-6 p-4 rounded-[10px] transition-colors duration-300 bg-transparent hover:bg-[#276DA4]/[0.07] group"
             >
-              {/* IMAGE */}
-              <div className="flex justify-center items-start">
+              {/* IMAGE - MOBILE BOTTOM */}
+              <div className="order-2 md:order-1 flex justify-start mt-4 md:mt-0">
                 <img
                   src="/eagles.png"
                   alt="Eagle’s Leisurewear"
-                  className="w-[140px] h-[80px] object-cover rounded-md
-         border-2 border-gray-400/40
-         transition-colors duration-300
-         group-hover:border-gray-300/80"
+                  className="w-full md:w-[140px] h-auto md:h-[80px] object-cover rounded-md border-2 border-gray-400/40 transition-colors duration-300 group-hover:border-gray-300/80"
                 />
               </div>
 
               {/* CONTENT */}
-              <div>
-                <h4 className="text-xl font-semibold transition-colors duration-300 group-hover:text-[#37398B]">
+              <div className="order-1 md:order-2 text-left md:text-left">
+                <h4 className="text-xl font-semibold transition-colors duration-300 group-hover:text-[#37398B] text-left">
                   Eagle’s Leisurewear E-Commerce System
                 </h4>
-                <p className="opacity-80 mb-2">School Project</p>
-                <p className="leading-relaxed max-w-3xl">
+                <p className="opacity-80 mb-2 text-left">School Project</p>
+                <p className="leading-relaxed max-w-3xl text-left">
                   This school project involved developing an e-commerce system
                   for Eagle’s Leisurewear to enable seamless online ordering and
                   efficient stock management for administrators. The frontend
@@ -370,7 +359,7 @@ export default function About() {
                 </p>
 
                 {/* TOOL BADGES */}
-                <div className="flex flex-wrap gap-3 mt-4">
+                <div className="flex flex-wrap gap-3 mt-4 justify-start">
                   <span className="h-5 px-3 flex items-center justify-center rounded-[20px] bg-[#37398B] text-[#F0E8D5] text-xs">
                     HTML
                   </span>

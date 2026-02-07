@@ -37,3 +37,19 @@ Done:
 - Hero Landing Motions
 
 ---
+
+Sprint 5 - February 1 to February 7
+
+To do:
+
+- Make layout adapt to different screen sizes
+- Create a mobile view version of the site
+- QA
+
+Done:
+
+- Navbar Fix Issue:
+- Change About Me Paragraph
+- Fix Navbar hover state on scroll (highlight correct section when scrolled)
+
+---

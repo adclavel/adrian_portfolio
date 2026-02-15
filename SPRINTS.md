@@ -58,6 +58,18 @@ Sprint 6 - February 8 to February 14,
 
 To do:
 
+- Replace Image on Hero - Clearer Resolution
+- QA
+- Deploy Portfolio by Wednesday
+- Announce on Friday
+
+---
+
+Sprint 7 - February 15 to February 21,
+
+To do:
+
+- Replace Image on Hero - Clearer Resolution
 - QA
 - Deploy Portfolio by Wednesday
 - Announce on Friday

@@ -69,9 +69,12 @@ Sprint 7 - February 15 to February 21,
 
 To do:
 
-- Replace Image on Hero - Clearer Resolution
-- QA
 - Deploy Portfolio by Wednesday
 - Announce on Friday
+
+Done:
+
+- Replace Image on Hero - Clearer Resolution - DESCOPED - made the image smaller
+- QA
 
 ---

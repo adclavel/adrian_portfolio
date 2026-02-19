@@ -162,10 +162,10 @@ export default function About() {
                 </h4>
                 <p className="opacity-80 mb-3">Law Advisor Ventures Ltd</p>
                 <p className="leading-relaxed max-w-3xl">
-                  Managed Jira and Xray for test management and defect tracking.
-                  Performed manual, sanity, and smoke testing, executed smoke
-                  automation using Selenium (Java), and validated APIs via
-                  Swagger UI.
+                  Managed test cases in Jira and Xray, performed manual, sanity,
+                  and smoke testing, and possess solid working knowledge in API
+                  testing using Swagger UI, including validating endpoints,
+                  requests, and responses.
                 </p>
 
                 {/* TOOL BADGES */}
@@ -177,13 +177,7 @@ export default function About() {
                     Sanity Testing
                   </span>
                   <span className="h-5 px-3 flex items-center justify-center rounded-[20px] bg-[#37398B] text-[#F0E8D5] text-xs">
-                    Smoke Automation Testing
-                  </span>
-                  <span className="h-5 px-3 flex items-center justify-center rounded-[20px] bg-[#37398B] text-[#F0E8D5] text-xs">
                     API Testing
-                  </span>
-                  <span className="h-5 px-3 flex items-center justify-center rounded-[20px] bg-[#37398B] text-[#F0E8D5] text-xs">
-                    Selenium (Java)
                   </span>
                   <span className="h-5 px-3 flex items-center justify-center rounded-[20px] bg-[#37398B] text-[#F0E8D5] text-xs">
                     Swagger UI

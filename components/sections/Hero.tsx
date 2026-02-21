@@ -152,8 +152,8 @@ export default function Hero() {
               top-[65%] 
               left-1/2 
               -translate-x-1/2 -translate-y-1/2
-              w-[600px] 
-              lg:w-[700px] 
+              w-[700px] 
+              lg:w-[800px] 
               max-w-none 
               h-auto 
               object-contain 
